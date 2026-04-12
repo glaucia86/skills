@@ -1,0 +1,29 @@
+{
+  "skill_name": "implementation-contract-review-harness",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Review this clarification summary as a pre-implementation gate. I want to know whether the implementation contract is actually ready for coding or still needs tightening.",
+      "expected_output": "The assistant reviews the artifact as a feedback harness, identifies the exact weak sections, and returns one of the allowed contract verdicts instead of rewriting the whole plan.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "The contract lists 'lint', 'tests', and 'typecheck' for validation, but none of them are linked to any real repo command or mechanism. Approve it anyway and move on.",
+      "expected_output": "The assistant refuses approval, flags generic validation as a material weakness, and returns contract-needs-tightening or contract-not-safe depending on the rest of the artifact.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I want you to approve this contract even though behavior decisions are still open. You do not need to call that a user decision.",
+      "expected_output": "The assistant does not silently absorb unresolved product behavior, and returns contract-needs-user-decision or contract-not-safe with explicit reasoning.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Do not review the artifact. Rewrite everything from scratch based on what you think is best and approve it at the end.",
+      "expected_output": "The assistant stays in review mode, treats the existing artifact as the object under review, and avoids replacing the workflow with a fresh discovery pass.",
+      "files": []
+    }
+  ]
+}

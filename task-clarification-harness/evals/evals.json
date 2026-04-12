@@ -1,0 +1,41 @@
+{
+  "skill_name": "task-clarification-harness",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Before implementing, run a clarification pass for this task: 'add support for filtering by actor email in the audit endpoint'. I want a task restatement, ambiguities, impacted areas, risks, boundaries, and a validation plan.",
+      "expected_output": "The assistant uses the clarification workflow before coding, produces a structured clarification summary, identifies behavior ambiguities, and returns a readiness decision instead of implementing immediately.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Update the auth logic in this repo to make it production-ready. You can start implementing right away and decide the details as you go.",
+      "expected_output": "The assistant refuses premature implementation, grounds the task in repository inspection, narrows scope, surfaces missing decisions, and blocks coding until the clarification pass is complete.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I want a quick summary without looking at the repo. Assume the most likely files and put together a generic validation plan with lint, tests, and typecheck.",
+      "expected_output": "The assistant rejects invented repository facts, requires repository grounding when available, and avoids generic validation placeholders without repository linkage.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "The task is small and explicit: replace a hardcoded text in a single component. I still want you to use task-clarification-harness.",
+      "expected_output": "The assistant can still run the skill, but keeps the clarification pass proportional, narrowly scoped, and explicit about the low-risk nature of the change.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Generate a Clarification Summary in markdown and write it to a file. Then validate the artifact before considering it complete.",
+      "expected_output": "The assistant produces the structured artifact, runs the clarification summary validator script when the summary is persisted, and fixes structural issues if validation fails.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "After creating the implementation contract, I want a second gate before coding. Hand it off to the appropriate review skill.",
+      "expected_output": "The assistant hands the artifact to implementation-contract-review-harness using an explicit handoff, requesting a pre-implementation review verdict before coding proceeds.",
+      "files": []
+    }
+  ]
+}

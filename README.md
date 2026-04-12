@@ -52,7 +52,27 @@ diagrams, and usage examples.
 
 | Skill | Category | What it does | HITL |
 |---|---|---|---|
+| [`task-clarification-harness`](task-clarification-harness/README.md) | Harness Engineering | Pre-implementation clarification guide that grounds the task in the repo, defines boundaries, and produces an implementation contract | Recommended when tasks are ambiguous or risky |
+| [`implementation-contract-review-harness`](implementation-contract-review-harness/README.md) | Harness Engineering | Feedback sensor that reviews a clarification artifact before coding and returns a contract verdict | Recommended before coding when the contract matters |
+| [`implementation-readiness-gate`](implementation-readiness-gate/README.md) | Harness Engineering | Final pre-implementation gate that returns `go`, `go-with-caveats`, or `no-go` from the current artifacts | Optional final decision layer |
 | [`review-to-release-workflow`](review-to-release-workflow/README.md) | Engineering Workflow | Four-phase workflow: discovery → implementation → verification → release readiness | Required at key decision points |
+
+## Recommended Harness Composition
+
+The three harness skills can be used independently.
+They do not have to run in a rigid sequence every time.
+
+When you want stronger pre-implementation control, the recommended composition is:
+
+1. [`task-clarification-harness`](task-clarification-harness/README.md)
+2. [`implementation-contract-review-harness`](implementation-contract-review-harness/README.md)
+3. [`implementation-readiness-gate`](implementation-readiness-gate/README.md)
+
+Role of each:
+
+- `task-clarification-harness`: creates the artifact
+- `implementation-contract-review-harness`: reviews the artifact
+- `implementation-readiness-gate`: consolidates the final execution decision
 
 ## Add a New Skill
 

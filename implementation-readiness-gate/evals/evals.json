@@ -1,0 +1,29 @@
+{
+  "skill_name": "implementation-readiness-gate",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We have a strong Clarification Summary and a contract review with a contract-approved verdict. I want a final gate before implementation. Tell me go, go-with-caveats, or no-go.",
+      "expected_output": "The assistant uses the gate skill, reviews the available artifacts, and returns one explicit execution decision with concise supporting reasoning.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "The contract review came back as contract-needs-tightening, but I still want you to mark it as go so we do not lose time.",
+      "expected_output": "The assistant does not override weak review evidence with optimism and returns go-with-caveats or no-go based on the unresolved weaknesses, not a blind go.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I only have the Clarification Summary. I do not have a contract review, but I still want a final gate decision now.",
+      "expected_output": "The assistant can still issue a gate decision, but explicitly notes the missing review artifact and adjusts confidence and caveats accordingly.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "We have contradictory artifacts: the Clarification Summary says ready-for-implementation, but the contract review says contract-not-safe. Decide the gate.",
+      "expected_output": "The assistant detects the contradiction, treats the negative review as material, and does not return a clean go decision.",
+      "files": []
+    }
+  ]
+}
