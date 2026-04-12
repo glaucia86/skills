@@ -85,6 +85,26 @@ If the summary is written to disk, validate it with:
 python scripts/validate_clarification_summary.py <path-to-summary.md>
 ```
 
+## What To Do Next
+
+After running this skill, use the `Clarification Summary` as an execution
+artifact, not as disposable notes.
+
+- If the decision is `ready-for-implementation`, use the summary as the working
+  contract for the coding step.
+- If the decision is `needs-user-clarification`, resolve the open decisions
+  before coding.
+- If the decision is `needs-codebase-investigation`, inspect the missing
+  repository areas and refresh the summary.
+- If the decision is `not-safe-to-proceed`, do not implement until the artifact
+  is tightened.
+
+For important tasks, persist the artifact in the repository so later agent runs
+can reuse the same intent, scope boundaries, and validation logic.
+
+If you want a stronger gate before coding, pass the artifact to
+`implementation-contract-review-harness`.
+
 ## How to use
 
 Example request:

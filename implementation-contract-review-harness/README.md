@@ -60,6 +60,22 @@ Use this skill when you already have:
 
 and you want a second-pass review before coding starts.
 
+## What To Do Next
+
+After running this skill, treat the verdict as a real gate.
+
+- If the verdict is `contract-approved`, implementation can begin using the
+  reviewed artifact as the contract.
+- If the verdict is `contract-needs-tightening`, revise the weak sections and
+  review again before coding.
+- If the verdict is `contract-needs-user-decision`, resolve the missing product
+  or behavior decisions with the user first.
+- If the verdict is `contract-not-safe`, do not implement from the current
+  artifact.
+
+If you want one final execution decision after review, pass the clarification
+artifact and the review verdict to `implementation-readiness-gate`.
+
 ## How to use
 
 Example request:
@@ -99,4 +115,3 @@ This skill includes eval prompts in `evals/evals.json` covering:
 - rejection of generic validation placeholders
 - handling of unresolved product decisions
 - staying in review mode instead of rewriting the plan from scratch
-

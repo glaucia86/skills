@@ -48,6 +48,20 @@ Use this skill when:
 - contract review is complete or intentionally skipped
 - you want one explicit pre-implementation decision
 
+## What To Do Next
+
+After running this skill, follow the gate decision literally.
+
+- If the decision is `go`, implementation can begin using the existing artifacts
+  as execution context.
+- If the decision is `go-with-caveats`, implementation can begin only within the
+  named caveats, limits, and follow-up obligations.
+- If the decision is `no-go`, do not start coding. Strengthen clarification,
+  contract review, or user decisions first.
+
+For important tasks, keep the gate output with the other planning artifacts so
+future agent runs can see why implementation was allowed or blocked.
+
 ## How to use
 
 Example request:
