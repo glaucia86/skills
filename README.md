@@ -1,17 +1,29 @@
-# Agent Skills by Glaucia
+# Agent Skills — Glaucia Lemos
 
-[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Open%20Standard-111827)](https://agentskills.io/)
-[![Directory](https://img.shields.io/badge/Directory-skills.sh-0f766e)](https://skills.sh/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-1f2937.svg)](LICENSE)
+<div align="center">
 
-A growing collection of reusable skills for coding agents — focused on safe
-delivery workflows, Human in the Loop decisions, and explicit release gates.
+<img src="https://avatars.githubusercontent.com/u/1631477?v=4" width="96" style="border-radius:50%" alt="Glaucia Lemos"/>
 
-## Why this collection exists
+<h3>Glaucia Lemos</h3>
+<p>A.I Developer · Open Source Contributor · <a href="https://linktr.ee/glaucia_lemos86">linktr.ee/glaucia_lemos86</a></p>
 
-Most teams ship faster when they are strict about process, but process often
-lives in scattered docs and tribal knowledge. These skills turn those rules into
-portable, executable playbooks that any coding agent can follow.
+<p>
+  <a href="https://agentskills.io/"><img src="https://img.shields.io/badge/Agent%20Skills-Open%20Standard-111827?style=flat-square" alt="Agent Skills"/></a>
+  <a href="https://skills.sh/"><img src="https://img.shields.io/badge/Listed%20on-skills.sh-0f766e?style=flat-square" alt="skills.sh"/></a>
+  <a href="https://github.com/glaucia86"><img src="https://img.shields.io/github/followers/glaucia86?style=flat-square&label=Follow&color=1f2937" alt="GitHub followers"/></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-1f2937?style=flat-square" alt="License: MIT"/></a>
+</p>
+
+</div>
+
+---
+
+A growing collection of reusable skills for coding agents. Focused on safe delivery
+workflows, Human in the Loop decisions, and explicit release gates.
+
+Each skill is a portable, executable playbook that any coding agent can follow.
+Most teams ship faster when they are strict about process. But process usually lives
+in scattered docs and tribal knowledge. These skills change that.
 
 ## Quick Start
 
@@ -27,7 +39,7 @@ Install a specific skill by name:
 npx skills@latest add glaucia86/skills --skill <skill-name>
 ```
 
-List all available skills:
+List all available skills from a local clone:
 
 ```bash
 npx skills add ./ --list
@@ -35,7 +47,8 @@ npx skills add ./ --list
 
 ## Skill Catalog
 
-Each skill has its own `README.md` with installation instructions, workflow details, and examples.
+Each skill has its own `README.md` with full installation instructions, workflow
+diagrams, and usage examples.
 
 | Skill | Category | What it does | HITL |
 |---|---|---|---|
@@ -47,7 +60,7 @@ Use this repo as a scalable catalog. For every new skill:
 
 1. Create a folder at repo root using kebab-case.
 2. Add `SKILL.md` with valid frontmatter (`name`, `description`).
-3. Add a `README.md` inside the skill folder with full documentation.
+3. Add `README.md` inside the folder with full documentation.
 4. Add `evals/evals.json` with at least 2 realistic prompts.
 5. Add one row to the Skill Catalog table above.
 
@@ -82,7 +95,7 @@ Before pushing a new skill:
 1. Skill folder is at repo root and not ignored by Git.
 2. `SKILL.md` has valid `name` and `description` frontmatter.
 3. `README.md` inside the skill folder covers usage and examples.
-4. Skill Catalog table in this file links to the skill README.
+4. Skill Catalog table links to the skill README.
 5. Install command works locally and from the remote repo.
 
 ## Roadmap
@@ -90,3 +103,12 @@ Before pushing a new skill:
 - More workflow skills: architecture reviews, incident response, migration playbooks.
 - Stronger eval coverage with negative tests and artifact-gating checks.
 - Benchmark automation for iteration reports.
+
+---
+
+<div align="center">
+
+Made by [Glaucia Lemos](https://github.com/glaucia86) · Rio de Janeiro, Brazil
+· [Twitter/X](https://twitter.com/glaucia_lemos86) · [LinkedIn](https://www.linkedin.com/in/glaucialemos/) · [YouTube](https://bit.ly/youtube-canal-glaucialemos) · [Linktree](https://linktr.ee/glaucia_lemos86)
+
+</div>
