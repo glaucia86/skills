@@ -1,4 +1,4 @@
-# Agent Skills — Glaucia Lemos
+# Agent Skills by Glaucia Lemos
 
 <div align="center">
 
