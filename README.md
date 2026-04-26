@@ -56,6 +56,7 @@ diagrams, and usage examples.
 | [`implementation-contract-review-harness`](implementation-contract-review-harness/README.md) | Harness Engineering | Feedback sensor that reviews a clarification artifact before coding and returns a contract verdict | Recommended before coding when the contract matters |
 | [`implementation-readiness-gate`](implementation-readiness-gate/README.md) | Harness Engineering | Final pre-implementation gate that returns `go`, `go-with-caveats`, or `no-go` from the current artifacts | Optional final decision layer |
 | [`review-to-release-workflow`](review-to-release-workflow/README.md) | Engineering Workflow | Four-phase workflow: discovery → implementation → verification → release readiness | Required at key decision points |
+| [`revealjs`](revealjs/SKILL.md) | Presentation | Creates reveal.js HTML presentations as single-file artifacts; covers slides, fragments, auto-animate, code highlighting, math, backgrounds, themes, transitions, speaker notes, PDF export, and the React wrapper | Not applicable |
 
 ## Recommended Harness Composition
 
