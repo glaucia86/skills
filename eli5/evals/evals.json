@@ -1,0 +1,29 @@
+{
+  "skill_name": "eli5",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Use eli5 to explain what an API is for a complete beginner. Build a visual HTML explainer with very few words.",
+      "expected_output": "The assistant produces a standalone HTML explainer with a clear big answer, a familiar analogy, a short causal flow, and beginner-friendly language.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Explain like I'm five how HTTPS works, but keep it technically accurate and show where the analogy stops.",
+      "expected_output": "The assistant keeps the explanation simple without becoming false, includes an analogy limitation note, and preserves critical technical truth.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Create an ELI5 visual page for machine learning that must work offline and on a phone.",
+      "expected_output": "The assistant returns one self-contained HTML file with embedded assets only, responsive layout, and no remote dependencies.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Use eli5 for blockchain, but skip visuals and provide a long textbook-style explanation.",
+      "expected_output": "The assistant follows the skill intent by prioritizing a compact visual story over dense text and avoids drifting into a textbook format.",
+      "files": []
+    }
+  ]
+}
